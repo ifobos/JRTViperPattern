@@ -62,12 +62,18 @@
 - (void)popViewControllerAnimnated:(BOOL)animated
 {
     [((UIViewController *)self.viewController).navigationController popViewControllerAnimated:animated];
+    self.presenter.interactor     =  nil;
+    self.presenter.router         =  nil;
+    self.presenter.viewController =  nil;
+    self.viewController.presenter =  nil;
+    self.presenter                =  nil;
+    self.viewController           =  nil;
 }
 
 - (void)popViewControllerAnimnated:(BOOL)animated withInteractor:(id<InteractorProtocol>)interactor
 {
     [self setPreviousInteractor:interactor inNavigationController:((UIViewController *)self.viewController).navigationController];
-    [((UIViewController *)self.viewController).navigationController popViewControllerAnimated:animated];
+    [self popViewControllerAnimnated:animated];
 }
 
 - (void)setPreviousInteractor:(id<InteractorProtocol>)interactor inNavigationController:(UINavigationController*)navigationController
