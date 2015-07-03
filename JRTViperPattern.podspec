@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JRTViperPattern"
-  s.version      = "0.1"
+  s.version      = "0.1.2"
   s.summary      = "JRTViperPattern super classes to work in VIPER pattern"
   s.homepage     = "https://github.com/ifobos/JRTViperPattern"
   s.license      = "MIT"
