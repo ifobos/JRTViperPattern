@@ -23,5 +23,5 @@
 #import "JRTViperPresenterProtocol.h"
 
 @protocol InteractorProtocol
-@property (strong, nonatomic) id <PresenterProtocol> presenter;
+@property (weak, nonatomic) id <PresenterProtocol> presenter;
 @end

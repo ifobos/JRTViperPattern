@@ -27,7 +27,7 @@
 @protocol InteractorProtocol;
 
 @protocol PresenterProtocol
-@property (strong, nonatomic) id <ViewProtocol> viewController;
+@property (weak, nonatomic) id <ViewProtocol> viewController;
 @property (strong, nonatomic) id <InteractorProtocol> interactor;
 @property (strong, nonatomic) id <RouterProtocol> router;
 @end

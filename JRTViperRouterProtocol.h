@@ -30,8 +30,8 @@
 - (void)popViewControllerAnimnated:(BOOL)animated;
 - (void)popViewControllerAnimnated:(BOOL)animated withInteractor:(id<InteractorProtocol>)interactor;
 - (void)setPreviousInteractor:(id<InteractorProtocol>)interactor inNavigationController:(UINavigationController*)navigationController;
+- (UIViewController *)viewController;
 
-@property (strong, nonatomic) id <ViewProtocol> viewController;
-@property (strong, nonatomic) id <PresenterProtocol> presenter;
+@property (weak, nonatomic) id <PresenterProtocol> presenter;
 
 @end

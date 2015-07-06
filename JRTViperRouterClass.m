@@ -30,55 +30,35 @@
 
 #pragma mark - Synthesize
 
-@synthesize viewController = _viewController;
 @synthesize presenter      = _presenter;
-
-#pragma mark - Setup
-
--(instancetype)init
-{
-    if (self = [super init])
-    {
-        self.viewController.presenter =  self.presenter;
-        self.presenter.viewController =  self.viewController;
-        self.presenter.router         =  self;
-    }
-    return self;
-}
 
 #pragma mark - Public
 
 - (void)pushInNavigationController:(UINavigationController*)navigationController animated:(BOOL)animated
 {
-    [navigationController pushViewController: (UIViewController *)self.viewController animated:animated];
+    [navigationController pushViewController: [self viewController] animated:animated];
 }
 
 - (void)pushInNavigationController:(UINavigationController*)navigationController animated:(BOOL)animated withInteractor:(id<InteractorProtocol>)interactor
 {
     self.presenter.interactor = interactor;
-    [navigationController pushViewController: (UIViewController *)self.viewController animated:animated];
+    [navigationController pushViewController: [self viewController] animated:animated];
 }
 
 - (void)popViewControllerAnimnated:(BOOL)animated
 {
-    [((UIViewController *)self.viewController).navigationController popViewControllerAnimated:animated];
-    self.presenter.interactor     =  nil;
-    self.presenter.router         =  nil;
-    self.presenter.viewController =  nil;
-    self.viewController.presenter =  nil;
-    self.presenter                =  nil;
-    self.viewController           =  nil;
+    [((UIViewController *)self.presenter.viewController).navigationController popViewControllerAnimated:animated];
 }
 
 - (void)popViewControllerAnimnated:(BOOL)animated withInteractor:(id<InteractorProtocol>)interactor
 {
-    [self setPreviousInteractor:interactor inNavigationController:((UIViewController *)self.viewController).navigationController];
+    [self setPreviousInteractor:interactor inNavigationController:((UIViewController *)self.presenter.viewController).navigationController];
     [self popViewControllerAnimnated:animated];
 }
 
 - (void)setPreviousInteractor:(id<InteractorProtocol>)interactor inNavigationController:(UINavigationController*)navigationController
 {
-    NSUInteger indexOfViewController         = [navigationController.viewControllers indexOfObject:self.viewController];
+    NSUInteger indexOfViewController         = [navigationController.viewControllers indexOfObject:self.presenter.viewController];
     id <ViewProtocol> previousViewController = [navigationController.viewControllers objectAtIndex:indexOfViewController-1];
     id <PresenterProtocol>previousPresenter  = previousViewController.presenter;
     previousPresenter.interactor             = interactor;
@@ -86,38 +66,35 @@
 
 #pragma mark - Abstract
 
-- (id<ViewProtocol>)viewController
+- (UIViewController *)viewController
 {
-    
-    if (!_viewController)
+    if (!self.presenter)
     {
-        _viewController = [[NSClassFromString([self viewControllerClassName]) alloc] init];
-        
-        if (!_viewController)
+        id <ViewProtocol> viewController = [[NSClassFromString([self viewControllerClassName]) alloc] init];
+        if (!viewController)
         {
             @throw  [[NSException alloc] initWithName:[NSString stringWithFormat:@"Abstract %@", self.class]
                                                reason:[NSString stringWithFormat:@"%@ Class return nil for %@", [self viewControllerClassName], NSStringFromSelector(_cmd)]
                                              userInfo:nil];
         }
-    }
-    return _viewController;
-}
-
-- (id<PresenterProtocol>)presenter
-{
-    if (!_presenter)
-    {
-        _presenter = [[NSClassFromString([self presenterClassName]) alloc] init];
         
-        if (!_presenter)
+        id <PresenterProtocol> presenter = [[NSClassFromString([self presenterClassName]) alloc] init];
+        if (!presenter)
         {
             @throw  [[NSException alloc] initWithName:[NSString stringWithFormat:@"Abstract %@", self.class]
                                                reason:[NSString stringWithFormat:@"%@ Class return nil for %@", [self presenterClassName], NSStringFromSelector(_cmd)]
                                              userInfo:nil];
         }
+        viewController.presenter    = presenter;
+        presenter.viewController    = viewController;
+        presenter.router            = self;
+        self.presenter              = presenter;
+        return (UIViewController *)viewController;
     }
-    
-    return _presenter;
+    else
+    {
+        return (UIViewController *)self.presenter.viewController;
+    }
 }
 
 #pragma mark - Class Name Helpers
