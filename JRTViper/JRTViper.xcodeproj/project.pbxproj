@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3152233B1B6AC28400FC23F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3152233A1B6AC28400FC23F4 /* main.m */; };
+		3152233E1B6AC28400FC23F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3152233D1B6AC28400FC23F4 /* AppDelegate.m */; };
+		315223461B6AC28400FC23F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315223451B6AC28400FC23F4 /* Images.xcassets */; };
+		315223491B6AC28400FC23F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315223471B6AC28400FC23F4 /* LaunchScreen.xib */; };
+		315223551B6AC28400FC23F4 /* JRTViperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223541B6AC28400FC23F4 /* JRTViperTests.m */; };
+		315223731B6AC3E200FC23F4 /* JRTViperEntityClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223611B6AC3E200FC23F4 /* JRTViperEntityClass.m */; };
+		315223741B6AC3E200FC23F4 /* JRTViperInteractorClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223641B6AC3E200FC23F4 /* JRTViperInteractorClass.m */; };
+		315223751B6AC3E200FC23F4 /* JRTViperPresenterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223671B6AC3E200FC23F4 /* JRTViperPresenterClass.m */; };
+		315223761B6AC3E200FC23F4 /* JRTViperRouterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3152236A1B6AC3E200FC23F4 /* JRTViperRouterClass.m */; };
+		315223771B6AC3E200FC23F4 /* JRTViperTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3152236D1B6AC3E200FC23F4 /* JRTViperTabBarController.m */; };
+		315223781B6AC3E200FC23F4 /* JRTViperTableViewControllerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3152236F1B6AC3E200FC23F4 /* JRTViperTableViewControllerClass.m */; };
+		315223791B6AC3E200FC23F4 /* JRTViperViewControllerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223711B6AC3E200FC23F4 /* JRTViperViewControllerClass.m */; };
+		3152237C1B6AC87C00FC23F4 /* JRTMainRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3152237B1B6AC87C00FC23F4 /* JRTMainRouter.m */; };
+		315223A61B6ACEED00FC23F4 /* JRTIndexEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223981B6ACEED00FC23F4 /* JRTIndexEntity.m */; };
+		315223A71B6ACEED00FC23F4 /* JRTIndexInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3152239B1B6ACEED00FC23F4 /* JRTIndexInteractor.m */; };
+		315223A81B6ACEED00FC23F4 /* JRTIndexPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3152239E1B6ACEED00FC23F4 /* JRTIndexPresenter.m */; };
+		315223A91B6ACEED00FC23F4 /* JRTIndexRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223A11B6ACEED00FC23F4 /* JRTIndexRouter.m */; };
+		315223AA1B6ACEED00FC23F4 /* JRTIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223A41B6ACEED00FC23F4 /* JRTIndexViewController.m */; };
+		315223AB1B6ACEED00FC23F4 /* JRTIndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315223A51B6ACEED00FC23F4 /* JRTIndexViewController.xib */; };
+		315223B61B6AD3B700FC23F4 /* EmptyRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223B51B6AD3B700FC23F4 /* EmptyRouter.m */; };
+		315223BA1B6AD3EF00FC23F4 /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223B81B6AD3EF00FC23F4 /* EmptyViewController.m */; };
+		315223BB1B6AD3EF00FC23F4 /* EmptyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315223B91B6AD3EF00FC23F4 /* EmptyViewController.xib */; };
+		315223BE1B6AD43F00FC23F4 /* EmptyPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223BD1B6AD43F00FC23F4 /* EmptyPresenter.m */; };
+		315223C11B6AD5F700FC23F4 /* EmptyInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 315223C01B6AD5F700FC23F4 /* EmptyInteractor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3152234F1B6AC28400FC23F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3152232D1B6AC28400FC23F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 315223341B6AC28400FC23F4;
+			remoteInfo = JRTViper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		315223351B6AC28400FC23F4 /* JRTViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRTViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		315223391B6AC28400FC23F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3152233A1B6AC28400FC23F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3152233C1B6AC28400FC23F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3152233D1B6AC28400FC23F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		315223451B6AC28400FC23F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		315223481B6AC28400FC23F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3152234E1B6AC28400FC23F4 /* JRTViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRTViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		315223531B6AC28400FC23F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		315223541B6AC28400FC23F4 /* JRTViperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRTViperTests.m; sourceTree = "<group>"; };
+		3152235F1B6AC3E200FC23F4 /* JRTViper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViper.h; sourceTree = "<group>"; };
+		315223601B6AC3E200FC23F4 /* JRTViperEntityClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperEntityClass.h; sourceTree = "<group>"; };
+		315223611B6AC3E200FC23F4 /* JRTViperEntityClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTViperEntityClass.m; sourceTree = "<group>"; };
+		315223621B6AC3E200FC23F4 /* JRTViperEntityProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperEntityProtocol.h; sourceTree = "<group>"; };
+		315223631B6AC3E200FC23F4 /* JRTViperInteractorClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperInteractorClass.h; sourceTree = "<group>"; };
+		315223641B6AC3E200FC23F4 /* JRTViperInteractorClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTViperInteractorClass.m; sourceTree = "<group>"; };
+		315223651B6AC3E200FC23F4 /* JRTViperInteractorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperInteractorProtocol.h; sourceTree = "<group>"; };
+		315223661B6AC3E200FC23F4 /* JRTViperPresenterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperPresenterClass.h; sourceTree = "<group>"; };
+		315223671B6AC3E200FC23F4 /* JRTViperPresenterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTViperPresenterClass.m; sourceTree = "<group>"; };
+		315223681B6AC3E200FC23F4 /* JRTViperPresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperPresenterProtocol.h; sourceTree = "<group>"; };
+		315223691B6AC3E200FC23F4 /* JRTViperRouterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperRouterClass.h; sourceTree = "<group>"; };
+		3152236A1B6AC3E200FC23F4 /* JRTViperRouterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTViperRouterClass.m; sourceTree = "<group>"; };
+		3152236B1B6AC3E200FC23F4 /* JRTViperRouterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperRouterProtocol.h; sourceTree = "<group>"; };
+		3152236C1B6AC3E200FC23F4 /* JRTViperTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperTabBarController.h; sourceTree = "<group>"; };
+		3152236D1B6AC3E200FC23F4 /* JRTViperTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTViperTabBarController.m; sourceTree = "<group>"; };
+		3152236E1B6AC3E200FC23F4 /* JRTViperTableViewControllerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperTableViewControllerClass.h; sourceTree = "<group>"; };
+		3152236F1B6AC3E200FC23F4 /* JRTViperTableViewControllerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTViperTableViewControllerClass.m; sourceTree = "<group>"; };
+		315223701B6AC3E200FC23F4 /* JRTViperViewControllerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperViewControllerClass.h; sourceTree = "<group>"; };
+		315223711B6AC3E200FC23F4 /* JRTViperViewControllerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTViperViewControllerClass.m; sourceTree = "<group>"; };
+		315223721B6AC3E200FC23F4 /* JRTViperViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTViperViewProtocol.h; sourceTree = "<group>"; };
+		3152237A1B6AC87C00FC23F4 /* JRTMainRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTMainRouter.h; sourceTree = "<group>"; };
+		3152237B1B6AC87C00FC23F4 /* JRTMainRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTMainRouter.m; sourceTree = "<group>"; };
+		315223971B6ACEED00FC23F4 /* JRTIndexEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTIndexEntity.h; sourceTree = "<group>"; };
+		315223981B6ACEED00FC23F4 /* JRTIndexEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTIndexEntity.m; sourceTree = "<group>"; };
+		3152239A1B6ACEED00FC23F4 /* JRTIndexInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTIndexInteractor.h; sourceTree = "<group>"; };
+		3152239B1B6ACEED00FC23F4 /* JRTIndexInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTIndexInteractor.m; sourceTree = "<group>"; };
+		3152239D1B6ACEED00FC23F4 /* JRTIndexPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTIndexPresenter.h; sourceTree = "<group>"; };
+		3152239E1B6ACEED00FC23F4 /* JRTIndexPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTIndexPresenter.m; sourceTree = "<group>"; };
+		315223A01B6ACEED00FC23F4 /* JRTIndexRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTIndexRouter.h; sourceTree = "<group>"; };
+		315223A11B6ACEED00FC23F4 /* JRTIndexRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTIndexRouter.m; sourceTree = "<group>"; };
+		315223A31B6ACEED00FC23F4 /* JRTIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTIndexViewController.h; sourceTree = "<group>"; };
+		315223A41B6ACEED00FC23F4 /* JRTIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTIndexViewController.m; sourceTree = "<group>"; };
+		315223A51B6ACEED00FC23F4 /* JRTIndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRTIndexViewController.xib; sourceTree = "<group>"; };
+		315223B41B6AD3B700FC23F4 /* EmptyRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyRouter.h; sourceTree = "<group>"; };
+		315223B51B6AD3B700FC23F4 /* EmptyRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyRouter.m; sourceTree = "<group>"; };
+		315223B71B6AD3EF00FC23F4 /* EmptyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewController.h; sourceTree = "<group>"; };
+		315223B81B6AD3EF00FC23F4 /* EmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
+		315223B91B6AD3EF00FC23F4 /* EmptyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyViewController.xib; sourceTree = "<group>"; };
+		315223BC1B6AD43F00FC23F4 /* EmptyPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyPresenter.h; sourceTree = "<group>"; };
+		315223BD1B6AD43F00FC23F4 /* EmptyPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyPresenter.m; sourceTree = "<group>"; };
+		315223BF1B6AD5F700FC23F4 /* EmptyInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyInteractor.h; sourceTree = "<group>"; };
+		315223C01B6AD5F700FC23F4 /* EmptyInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyInteractor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		315223321B6AC28400FC23F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3152234B1B6AC28400FC23F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3152232C1B6AC28400FC23F4 = {
+			isa = PBXGroup;
+			children = (
+				315223371B6AC28400FC23F4 /* JRTViper */,
+				315223511B6AC28400FC23F4 /* JRTViperTests */,
+				315223361B6AC28400FC23F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		315223361B6AC28400FC23F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				315223351B6AC28400FC23F4 /* JRTViper.app */,
+				3152234E1B6AC28400FC23F4 /* JRTViperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		315223371B6AC28400FC23F4 /* JRTViper */ = {
+			isa = PBXGroup;
+			children = (
+				315223951B6ACEED00FC23F4 /* Index */,
+				3152237D1B6AC91100FC23F4 /* Examples */,
+				3152235E1B6AC3E200FC23F4 /* PodFiles */,
+				3152237A1B6AC87C00FC23F4 /* JRTMainRouter.h */,
+				3152237B1B6AC87C00FC23F4 /* JRTMainRouter.m */,
+				3152233C1B6AC28400FC23F4 /* AppDelegate.h */,
+				3152233D1B6AC28400FC23F4 /* AppDelegate.m */,
+				315223451B6AC28400FC23F4 /* Images.xcassets */,
+				315223471B6AC28400FC23F4 /* LaunchScreen.xib */,
+				315223381B6AC28400FC23F4 /* Supporting Files */,
+			);
+			path = JRTViper;
+			sourceTree = "<group>";
+		};
+		315223381B6AC28400FC23F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				315223391B6AC28400FC23F4 /* Info.plist */,
+				3152233A1B6AC28400FC23F4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		315223511B6AC28400FC23F4 /* JRTViperTests */ = {
+			isa = PBXGroup;
+			children = (
+				315223541B6AC28400FC23F4 /* JRTViperTests.m */,
+				315223521B6AC28400FC23F4 /* Supporting Files */,
+			);
+			path = JRTViperTests;
+			sourceTree = "<group>";
+		};
+		315223521B6AC28400FC23F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				315223531B6AC28400FC23F4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3152235E1B6AC3E200FC23F4 /* PodFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3152235F1B6AC3E200FC23F4 /* JRTViper.h */,
+				315223601B6AC3E200FC23F4 /* JRTViperEntityClass.h */,
+				315223611B6AC3E200FC23F4 /* JRTViperEntityClass.m */,
+				315223621B6AC3E200FC23F4 /* JRTViperEntityProtocol.h */,
+				315223631B6AC3E200FC23F4 /* JRTViperInteractorClass.h */,
+				315223641B6AC3E200FC23F4 /* JRTViperInteractorClass.m */,
+				315223651B6AC3E200FC23F4 /* JRTViperInteractorProtocol.h */,
+				315223661B6AC3E200FC23F4 /* JRTViperPresenterClass.h */,
+				315223671B6AC3E200FC23F4 /* JRTViperPresenterClass.m */,
+				315223681B6AC3E200FC23F4 /* JRTViperPresenterProtocol.h */,
+				315223691B6AC3E200FC23F4 /* JRTViperRouterClass.h */,
+				3152236A1B6AC3E200FC23F4 /* JRTViperRouterClass.m */,
+				3152236B1B6AC3E200FC23F4 /* JRTViperRouterProtocol.h */,
+				3152236C1B6AC3E200FC23F4 /* JRTViperTabBarController.h */,
+				3152236D1B6AC3E200FC23F4 /* JRTViperTabBarController.m */,
+				3152236E1B6AC3E200FC23F4 /* JRTViperTableViewControllerClass.h */,
+				3152236F1B6AC3E200FC23F4 /* JRTViperTableViewControllerClass.m */,
+				315223701B6AC3E200FC23F4 /* JRTViperViewControllerClass.h */,
+				315223711B6AC3E200FC23F4 /* JRTViperViewControllerClass.m */,
+				315223721B6AC3E200FC23F4 /* JRTViperViewProtocol.h */,
+			);
+			path = PodFiles;
+			sourceTree = "<group>";
+		};
+		3152237D1B6AC91100FC23F4 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				315223AE1B6AD2FD00FC23F4 /* Empty */,
+				315223AC1B6AD13C00FC23F4 /* Item */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		315223951B6ACEED00FC23F4 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				315223961B6ACEED00FC23F4 /* Entity */,
+				315223991B6ACEED00FC23F4 /* Interactor */,
+				3152239C1B6ACEED00FC23F4 /* Presenter */,
+				3152239F1B6ACEED00FC23F4 /* Router */,
+				315223A21B6ACEED00FC23F4 /* View */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		315223961B6ACEED00FC23F4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				315223971B6ACEED00FC23F4 /* JRTIndexEntity.h */,
+				315223981B6ACEED00FC23F4 /* JRTIndexEntity.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		315223991B6ACEED00FC23F4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3152239A1B6ACEED00FC23F4 /* JRTIndexInteractor.h */,
+				3152239B1B6ACEED00FC23F4 /* JRTIndexInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3152239C1B6ACEED00FC23F4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3152239D1B6ACEED00FC23F4 /* JRTIndexPresenter.h */,
+				3152239E1B6ACEED00FC23F4 /* JRTIndexPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3152239F1B6ACEED00FC23F4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				315223A01B6ACEED00FC23F4 /* JRTIndexRouter.h */,
+				315223A11B6ACEED00FC23F4 /* JRTIndexRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		315223A21B6ACEED00FC23F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				315223A31B6ACEED00FC23F4 /* JRTIndexViewController.h */,
+				315223A41B6ACEED00FC23F4 /* JRTIndexViewController.m */,
+				315223A51B6ACEED00FC23F4 /* JRTIndexViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		315223AC1B6AD13C00FC23F4 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				315223AD1B6AD2CF00FC23F4 /* View */,
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
+		315223AD1B6AD2CF00FC23F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		315223AE1B6AD2FD00FC23F4 /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				315223B31B6AD39400FC23F4 /* Router */,
+				315223B21B6AD38700FC23F4 /* Entity */,
+				315223B11B6AD32000FC23F4 /* Presenter */,
+				315223B01B6AD31700FC23F4 /* Interactor */,
+				315223AF1B6AD30F00FC23F4 /* View */,
+			);
+			name = Empty;
+			sourceTree = "<group>";
+		};
+		315223AF1B6AD30F00FC23F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				315223B71B6AD3EF00FC23F4 /* EmptyViewController.h */,
+				315223B81B6AD3EF00FC23F4 /* EmptyViewController.m */,
+				315223B91B6AD3EF00FC23F4 /* EmptyViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		315223B01B6AD31700FC23F4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				315223BF1B6AD5F700FC23F4 /* EmptyInteractor.h */,
+				315223C01B6AD5F700FC23F4 /* EmptyInteractor.m */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		315223B11B6AD32000FC23F4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				315223BC1B6AD43F00FC23F4 /* EmptyPresenter.h */,
+				315223BD1B6AD43F00FC23F4 /* EmptyPresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		315223B21B6AD38700FC23F4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		315223B31B6AD39400FC23F4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				315223B41B6AD3B700FC23F4 /* EmptyRouter.h */,
+				315223B51B6AD3B700FC23F4 /* EmptyRouter.m */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		315223341B6AC28400FC23F4 /* JRTViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 315223581B6AC28400FC23F4 /* Build configuration list for PBXNativeTarget "JRTViper" */;
+			buildPhases = (
+				315223311B6AC28400FC23F4 /* Sources */,
+				315223321B6AC28400FC23F4 /* Frameworks */,
+				315223331B6AC28400FC23F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JRTViper;
+			productName = JRTViper;
+			productReference = 315223351B6AC28400FC23F4 /* JRTViper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3152234D1B6AC28400FC23F4 /* JRTViperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3152235B1B6AC28400FC23F4 /* Build configuration list for PBXNativeTarget "JRTViperTests" */;
+			buildPhases = (
+				3152234A1B6AC28400FC23F4 /* Sources */,
+				3152234B1B6AC28400FC23F4 /* Frameworks */,
+				3152234C1B6AC28400FC23F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				315223501B6AC28400FC23F4 /* PBXTargetDependency */,
+			);
+			name = JRTViperTests;
+			productName = JRTViperTests;
+			productReference = 3152234E1B6AC28400FC23F4 /* JRTViperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3152232D1B6AC28400FC23F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Juan Garcia";
+				TargetAttributes = {
+					315223341B6AC28400FC23F4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3152234D1B6AC28400FC23F4 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 315223341B6AC28400FC23F4;
+					};
+				};
+			};
+			buildConfigurationList = 315223301B6AC28400FC23F4 /* Build configuration list for PBXProject "JRTViper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3152232C1B6AC28400FC23F4;
+			productRefGroup = 315223361B6AC28400FC23F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				315223341B6AC28400FC23F4 /* JRTViper */,
+				3152234D1B6AC28400FC23F4 /* JRTViperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		315223331B6AC28400FC23F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315223491B6AC28400FC23F4 /* LaunchScreen.xib in Resources */,
+				315223461B6AC28400FC23F4 /* Images.xcassets in Resources */,
+				315223BB1B6AD3EF00FC23F4 /* EmptyViewController.xib in Resources */,
+				315223AB1B6ACEED00FC23F4 /* JRTIndexViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3152234C1B6AC28400FC23F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		315223311B6AC28400FC23F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315223731B6AC3E200FC23F4 /* JRTViperEntityClass.m in Sources */,
+				315223781B6AC3E200FC23F4 /* JRTViperTableViewControllerClass.m in Sources */,
+				315223791B6AC3E200FC23F4 /* JRTViperViewControllerClass.m in Sources */,
+				315223761B6AC3E200FC23F4 /* JRTViperRouterClass.m in Sources */,
+				315223BE1B6AD43F00FC23F4 /* EmptyPresenter.m in Sources */,
+				315223A91B6ACEED00FC23F4 /* JRTIndexRouter.m in Sources */,
+				315223A61B6ACEED00FC23F4 /* JRTIndexEntity.m in Sources */,
+				315223C11B6AD5F700FC23F4 /* EmptyInteractor.m in Sources */,
+				3152237C1B6AC87C00FC23F4 /* JRTMainRouter.m in Sources */,
+				315223A81B6ACEED00FC23F4 /* JRTIndexPresenter.m in Sources */,
+				315223B61B6AD3B700FC23F4 /* EmptyRouter.m in Sources */,
+				315223A71B6ACEED00FC23F4 /* JRTIndexInteractor.m in Sources */,
+				315223771B6AC3E200FC23F4 /* JRTViperTabBarController.m in Sources */,
+				3152233E1B6AC28400FC23F4 /* AppDelegate.m in Sources */,
+				315223751B6AC3E200FC23F4 /* JRTViperPresenterClass.m in Sources */,
+				3152233B1B6AC28400FC23F4 /* main.m in Sources */,
+				315223BA1B6AD3EF00FC23F4 /* EmptyViewController.m in Sources */,
+				315223AA1B6ACEED00FC23F4 /* JRTIndexViewController.m in Sources */,
+				315223741B6AC3E200FC23F4 /* JRTViperInteractorClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3152234A1B6AC28400FC23F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315223551B6AC28400FC23F4 /* JRTViperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		315223501B6AC28400FC23F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 315223341B6AC28400FC23F4 /* JRTViper */;
+			targetProxy = 3152234F1B6AC28400FC23F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		315223471B6AC28400FC23F4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				315223481B6AC28400FC23F4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		315223561B6AC28400FC23F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		315223571B6AC28400FC23F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		315223591B6AC28400FC23F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JRTViper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3152235A1B6AC28400FC23F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JRTViper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3152235C1B6AC28400FC23F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JRTViperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JRTViper.app/JRTViper";
+			};
+			name = Debug;
+		};
+		3152235D1B6AC28400FC23F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JRTViperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JRTViper.app/JRTViper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		315223301B6AC28400FC23F4 /* Build configuration list for PBXProject "JRTViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				315223561B6AC28400FC23F4 /* Debug */,
+				315223571B6AC28400FC23F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		315223581B6AC28400FC23F4 /* Build configuration list for PBXNativeTarget "JRTViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				315223591B6AC28400FC23F4 /* Debug */,
+				3152235A1B6AC28400FC23F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3152235B1B6AC28400FC23F4 /* Build configuration list for PBXNativeTarget "JRTViperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3152235C1B6AC28400FC23F4 /* Debug */,
+				3152235D1B6AC28400FC23F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3152232D1B6AC28400FC23F4 /* Project object */;
+}
