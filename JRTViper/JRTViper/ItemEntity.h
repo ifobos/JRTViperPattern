@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "JRTViperEntityClass.h"
 @interface ItemEntity : JRTViperEntityClass
-@property (nonatomic, strong) NSString *itemId;
-@property (nonatomic, strong) NSString *itemName;
-@property (nonatomic, strong) NSString *itemDescription;
+@property (nonatomic        ) NSInteger itemId;
+@property (nonatomic, strong) NSString  *itemName;
+@property (nonatomic, strong) NSString  *itemDescription;
 @end

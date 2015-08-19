@@ -37,6 +37,7 @@
 		319CB4A81B84EB84004674EE /* ItemInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 319CB4A71B84EB84004674EE /* ItemInteractor.m */; };
 		319CB4AC1B84EBC2004674EE /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319CB4AA1B84EBC2004674EE /* ItemViewController.m */; };
 		319CB4AD1B84EBC2004674EE /* ItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319CB4AB1B84EBC2004674EE /* ItemViewController.xib */; };
+		319CB4B61B8517DE004674EE /* ContactEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 319CB4B51B8517DE004674EE /* ContactEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,8 @@
 		319CB4A91B84EBC2004674EE /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
 		319CB4AA1B84EBC2004674EE /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
 		319CB4AB1B84EBC2004674EE /* ItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemViewController.xib; sourceTree = "<group>"; };
+		319CB4B41B8517DE004674EE /* ContactEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactEntity.h; sourceTree = "<group>"; };
+		319CB4B51B8517DE004674EE /* ContactEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +227,7 @@
 		3152237D1B6AC91100FC23F4 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				319CB4AE1B84FB4E004674EE /* Contacts MasterDetail */,
 				315223AE1B6AD2FD00FC23F4 /* Empty */,
 				315223AC1B6AD13C00FC23F4 /* Item */,
 			);
@@ -402,6 +406,55 @@
 			name = Router;
 			sourceTree = "<group>";
 		};
+		319CB4AE1B84FB4E004674EE /* Contacts MasterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				319CB4B31B851782004674EE /* Router */,
+				319CB4B21B851776004674EE /* Entity */,
+				319CB4B11B85176A004674EE /* Presenter */,
+				319CB4B01B851755004674EE /* Interactor */,
+				319CB4AF1B84FC96004674EE /* View */,
+			);
+			name = "Contacts MasterDetail";
+			sourceTree = "<group>";
+		};
+		319CB4AF1B84FC96004674EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		319CB4B01B851755004674EE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		319CB4B11B85176A004674EE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		319CB4B21B851776004674EE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				319CB4B41B8517DE004674EE /* ContactEntity.h */,
+				319CB4B51B8517DE004674EE /* ContactEntity.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		319CB4B31B851782004674EE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -518,6 +571,7 @@
 				319CB49F1B84EA00004674EE /* ItemRouter.m in Sources */,
 				319CB4A21B84EA90004674EE /* ItemEntity.m in Sources */,
 				319CB4AC1B84EBC2004674EE /* ItemViewController.m in Sources */,
+				319CB4B61B8517DE004674EE /* ContactEntity.m in Sources */,
 				315223A71B6ACEED00FC23F4 /* JRTIndexInteractor.m in Sources */,
 				315223771B6AC3E200FC23F4 /* JRTViperTabBarController.m in Sources */,
 				3152233E1B6AC28400FC23F4 /* AppDelegate.m in Sources */,

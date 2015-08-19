@@ -33,7 +33,7 @@
 
 - (NSString *)itemId
 {
-    return [NSString stringWithFormat:@"[%@]",self.itemEntity.itemId];
+    return [NSString stringWithFormat:@"[%li]",(long)self.itemEntity.itemId];
 }
 
 - (NSString *)itemName
