@@ -10,10 +10,11 @@
 
 #import "EmptyRouter.h"
 #import "ItemRouter.h"
+#import "ContactsRouter.h"
 
-NSString * const kSectionTitleKey = @"SectionTitle";
-NSString * const kModulesKey      = @"Modules";
-NSString * const kModuleNameKey   = @"ModuleName";
+NSString * const kSectionTitleKey     = @"SectionTitle";
+NSString * const kModulesKey          = @"Modules";
+NSString * const kModuleNameKey       = @"ModuleName";
 NSString * const kModuleRouterNameKey = @"ModuleRouter";
 
 @implementation JRTIndexEntity
@@ -32,7 +33,11 @@ NSString * const kModuleRouterNameKey = @"ModuleRouter";
                                             @{
                                                 kModuleNameKey          : @"Item",
                                                 kModuleRouterNameKey    : NSStringFromClass([ItemRouter class])
-                                             }
+                                             },
+                                            @{
+                                                kModuleNameKey          : @"Contact (Master - Detail)",
+                                                kModuleRouterNameKey    : NSStringFromClass([ContactsRouter class])
+                                                }
                                             
                                              ]
                       }

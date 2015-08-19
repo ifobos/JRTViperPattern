@@ -33,17 +33,17 @@
 
 - (NSString *)itemId
 {
-    return [NSString stringWithFormat:@"[%li]",(long)self.itemEntity.itemId];
+    return [NSString stringWithFormat:@"[%li]",(long)self.itemEntity.uid];
 }
 
 - (NSString *)itemName
 {
-    return [self.itemEntity.itemName capitalizedString];
+    return [self.itemEntity.name capitalizedString];
 }
 
 - (NSString *)itemDescription
 {
-    return [NSString stringWithFormat:@"%@ +",self.itemEntity.itemDescription];
+    return [NSString stringWithFormat:@"%@ +",self.itemEntity.about];
 }
 
 
