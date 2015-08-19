@@ -11,6 +11,9 @@
 @implementation ItemInteractor
 - (ItemEntity *)readItem
 {
+    // Usually entities are obtained from a content provider,
+    // but this example is only about viper
+    
     ItemEntity *itemEntity     = [ItemEntity new];
     itemEntity.itemId          = @"ASDF";
     itemEntity.itemName        = @"jerti";
