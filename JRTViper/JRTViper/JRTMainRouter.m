@@ -24,6 +24,7 @@ NSString * const kInitialRouter = @"JRTIndexRouter";
     if (!_mainNavigationController)
     {
         _mainNavigationController = [UINavigationController new];
+        _mainNavigationController.navigationBar.translucent = NO;
         [self.initialRouter pushInNavigationController:_mainNavigationController animated:NO];
     }
     return _mainNavigationController;
