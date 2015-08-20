@@ -72,6 +72,26 @@
     [navigationController pushViewController: viewController animated:animated];
 }
 
+- (void)pushInNavigationController:(UINavigationController*)navigationController animated:(BOOL)animated andPresenterPerformSelector:(SEL)selector withObject:(id)object
+{
+    UIViewController<ViewProtocol> * viewController = (UIViewController<ViewProtocol> *) [self viewController];
+    NSObject *presenter = (NSObject *)viewController.presenter;
+    if ([presenter respondsToSelector:selector])
+    {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        [presenter performSelector:selector withObject:object];
+#pragma clang diagnostic pop
+    }
+    else
+    {
+        @throw  [[NSException alloc] initWithName:[NSString stringWithFormat:@"Abstract %@", self.class]
+                                           reason:[NSString stringWithFormat:@"%@ Class must respont to selector", [self presenterClassName]]
+                                         userInfo:nil];
+    }
+    [navigationController pushViewController: viewController animated:animated];
+}
+
 - (void)popViewControllerAnimnated:(BOOL)animated
 {
     [((UIViewController *)self.presenter.viewController).navigationController popViewControllerAnimated:animated];

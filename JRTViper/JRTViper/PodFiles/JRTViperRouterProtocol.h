@@ -27,6 +27,7 @@
 
 - (void)pushInNavigationController:(UINavigationController*)navigationController animated:(BOOL)animated;
 - (void)pushInNavigationController:(UINavigationController*)navigationController animated:(BOOL)animated withInteractor:(id<InteractorProtocol>)interactor;
+- (void)pushInNavigationController:(UINavigationController*)navigationController animated:(BOOL)animated andPresenterPerformSelector:(SEL)selector withObject:(id)object;
 - (void)pushInNavigationController:(UINavigationController*)navigationController animated:(BOOL)animated andSetPresenterPropertyNamed:(NSString *)propertyName withObject:(id)object;
 - (void)popViewControllerAnimnated:(BOOL)animated;
 - (void)popViewControllerAnimnated:(BOOL)animated withInteractor:(id<InteractorProtocol>)interactor;

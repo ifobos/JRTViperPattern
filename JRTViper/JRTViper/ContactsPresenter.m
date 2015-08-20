@@ -65,8 +65,10 @@
 
 -(void)showContactAtIndex:(NSInteger)index
 {
-    ContactRouter *nextRouter = [ContactRouter new];
-    [nextRouter pushInNavigationController:((UIViewController*)self.viewController).navigationController animated:YES andSetPresenterPropertyNamed:@"contactUid" withObject:@(index)];
+    ContactRouter *nextRouter = [ContactRouter new];    
+    [nextRouter pushInNavigationController:((UIViewController*)self.viewController).navigationController animated:YES andPresenterPerformSelector:NSSelectorFromString(@"setContactUid:") withObject:@(index)];
 }
+
+
 
 @end
