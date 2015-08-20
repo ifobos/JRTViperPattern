@@ -41,8 +41,35 @@
 
 - (void)pushInNavigationController:(UINavigationController*)navigationController animated:(BOOL)animated withInteractor:(id<InteractorProtocol>)interactor
 {
-    self.presenter.interactor = interactor;
-    [navigationController pushViewController: [self viewController] animated:animated];
+    UIViewController<ViewProtocol> * viewController = (UIViewController<ViewProtocol> *) [self viewController];
+    viewController.presenter.interactor = interactor;
+    [navigationController pushViewController: viewController animated:animated];
+}
+
+- (void)pushInNavigationController:(UINavigationController*)navigationController animated:(BOOL)animated andSetPresenterPropertyNamed:(NSString *)propertyName withObject:(id)object
+{
+    UIViewController<ViewProtocol> * viewController = (UIViewController<ViewProtocol> *) [self viewController];
+    NSObject *presenter = (NSObject *)viewController.presenter;
+    
+    NSRange range = NSMakeRange(0, 1);
+    NSString *firstCharacter = [propertyName substringWithRange:range];
+    NSString *capitalizedName = [propertyName stringByReplacingCharactersInRange:range withString:[firstCharacter uppercaseString]];
+    NSString *selectorString = [NSString stringWithFormat:@"set%@:", capitalizedName];
+    SEL selector = NSSelectorFromString(selectorString);
+    if ([presenter respondsToSelector:selector])
+    {
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        [presenter performSelector:selector withObject:object];
+        #pragma clang diagnostic pop
+    }
+    else
+    {
+        @throw  [[NSException alloc] initWithName:[NSString stringWithFormat:@"Abstract %@", self.class]
+                                           reason:[NSString stringWithFormat:@"%@ Class must respont to selector %@", [self presenterClassName], selectorString]
+                                         userInfo:nil];
+    }
+    [navigationController pushViewController: viewController animated:animated];
 }
 
 - (void)popViewControllerAnimnated:(BOOL)animated
@@ -68,7 +95,7 @@
 
 - (UIViewController *)viewController
 {
-    if (!self.presenter)
+    if (!_presenter)
     {
         id <ViewProtocol> viewController = [[NSClassFromString([self viewControllerClassName]) alloc] init];
         if (!viewController)
@@ -96,6 +123,8 @@
         return (UIViewController *)self.presenter.viewController;
     }
 }
+
+
 
 #pragma mark - Class Name Helpers
 
