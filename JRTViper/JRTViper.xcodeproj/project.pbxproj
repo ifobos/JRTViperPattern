@@ -43,6 +43,10 @@
 		319CB4BF1B85251B004674EE /* ContactInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 319CB4BE1B85251B004674EE /* ContactInteractor.m */; };
 		319CB4C31B85253F004674EE /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319CB4C11B85253F004674EE /* ContactsViewController.m */; };
 		319CB4C41B85253F004674EE /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319CB4C21B85253F004674EE /* ContactsViewController.xib */; };
+		319CB4C71B8535DD004674EE /* ContactRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 319CB4C61B8535DD004674EE /* ContactRouter.m */; };
+		319CB4CA1B8537DB004674EE /* ContactPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 319CB4C91B8537DB004674EE /* ContactPresenter.m */; };
+		319CB4CE1B853914004674EE /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319CB4CC1B853914004674EE /* ContactViewController.m */; };
+		319CB4CF1B853914004674EE /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319CB4CD1B853914004674EE /* ContactViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +134,13 @@
 		319CB4C01B85253F004674EE /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		319CB4C11B85253F004674EE /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		319CB4C21B85253F004674EE /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
+		319CB4C51B8535DD004674EE /* ContactRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactRouter.h; sourceTree = "<group>"; };
+		319CB4C61B8535DD004674EE /* ContactRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactRouter.m; sourceTree = "<group>"; };
+		319CB4C81B8537DB004674EE /* ContactPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactPresenter.h; sourceTree = "<group>"; };
+		319CB4C91B8537DB004674EE /* ContactPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactPresenter.m; sourceTree = "<group>"; };
+		319CB4CB1B853914004674EE /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		319CB4CC1B853914004674EE /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		319CB4CD1B853914004674EE /* ContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -438,6 +449,9 @@
 				319CB4C01B85253F004674EE /* ContactsViewController.h */,
 				319CB4C11B85253F004674EE /* ContactsViewController.m */,
 				319CB4C21B85253F004674EE /* ContactsViewController.xib */,
+				319CB4CB1B853914004674EE /* ContactViewController.h */,
+				319CB4CC1B853914004674EE /* ContactViewController.m */,
+				319CB4CD1B853914004674EE /* ContactViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -456,6 +470,8 @@
 			children = (
 				319CB4BA1B8524F8004674EE /* ContactsPresenter.h */,
 				319CB4BB1B8524F8004674EE /* ContactsPresenter.m */,
+				319CB4C81B8537DB004674EE /* ContactPresenter.h */,
+				319CB4C91B8537DB004674EE /* ContactPresenter.m */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -474,6 +490,8 @@
 			children = (
 				319CB4B71B8524D8004674EE /* ContactsRouter.h */,
 				319CB4B81B8524D8004674EE /* ContactsRouter.m */,
+				319CB4C51B8535DD004674EE /* ContactRouter.h */,
+				319CB4C61B8535DD004674EE /* ContactRouter.m */,
 			);
 			name = Router;
 			sourceTree = "<group>";
@@ -564,6 +582,7 @@
 				319CB4AD1B84EBC2004674EE /* ItemViewController.xib in Resources */,
 				315223BB1B6AD3EF00FC23F4 /* EmptyViewController.xib in Resources */,
 				315223AB1B6ACEED00FC23F4 /* JRTIndexViewController.xib in Resources */,
+				319CB4CF1B853914004674EE /* ContactViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +613,7 @@
 				3152237C1B6AC87C00FC23F4 /* JRTMainRouter.m in Sources */,
 				315223A81B6ACEED00FC23F4 /* JRTIndexPresenter.m in Sources */,
 				315223B61B6AD3B700FC23F4 /* EmptyRouter.m in Sources */,
+				319CB4C71B8535DD004674EE /* ContactRouter.m in Sources */,
 				319CB49F1B84EA00004674EE /* ItemRouter.m in Sources */,
 				319CB4A21B84EA90004674EE /* ItemEntity.m in Sources */,
 				319CB4AC1B84EBC2004674EE /* ItemViewController.m in Sources */,
@@ -606,8 +626,10 @@
 				315223751B6AC3E200FC23F4 /* JRTViperPresenterClass.m in Sources */,
 				319CB4A51B84EB2E004674EE /* ItemPresenter.m in Sources */,
 				3152233B1B6AC28400FC23F4 /* main.m in Sources */,
+				319CB4CA1B8537DB004674EE /* ContactPresenter.m in Sources */,
 				319CB4A81B84EB84004674EE /* ItemInteractor.m in Sources */,
 				315223BA1B6AD3EF00FC23F4 /* EmptyViewController.m in Sources */,
+				319CB4CE1B853914004674EE /* ContactViewController.m in Sources */,
 				315223AA1B6ACEED00FC23F4 /* JRTIndexViewController.m in Sources */,
 				315223741B6AC3E200FC23F4 /* JRTViperInteractorClass.m in Sources */,
 			);

@@ -11,4 +11,5 @@
 #import "ContactEntity.h"
 @interface ContactInteractor : JRTViperInteractorClass
 - (NSArray *)contactList;
+- (ContactEntity *)readContactWithUid:(NSInteger)uid;
 @end

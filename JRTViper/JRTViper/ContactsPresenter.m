@@ -9,6 +9,7 @@
 #import "ContactsPresenter.h"
 #import "ContactEntity.h"
 #import "ContactInteractor.h"
+#import "ContactRouter.h"
 
 @interface ContactsPresenter ()
 @property (nonatomic, readonly) ContactInteractor *contactInteractor;
@@ -64,7 +65,8 @@
 
 -(void)showContactAtIndex:(NSInteger)index
 {
-    //TODO: show contact
+    ContactRouter *nextRouter = [ContactRouter new];
+    [nextRouter pushInNavigationController:((UIViewController*)self.viewController).navigationController animated:YES andSetPresenterPropertyNamed:@"contactUid" withObject:@(index)];
 }
 
 @end
