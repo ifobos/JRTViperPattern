@@ -182,16 +182,16 @@
 		315223371B6AC28400FC23F4 /* JRTViper */ = {
 			isa = PBXGroup;
 			children = (
-				315223951B6ACEED00FC23F4 /* Index */,
 				3152237D1B6AC91100FC23F4 /* Examples */,
+				315223951B6ACEED00FC23F4 /* Index */,
 				3152235E1B6AC3E200FC23F4 /* PodFiles */,
-				3152237A1B6AC87C00FC23F4 /* JRTMainRouter.h */,
-				3152237B1B6AC87C00FC23F4 /* JRTMainRouter.m */,
+				315223381B6AC28400FC23F4 /* Supporting Files */,
 				3152233C1B6AC28400FC23F4 /* AppDelegate.h */,
 				3152233D1B6AC28400FC23F4 /* AppDelegate.m */,
 				315223451B6AC28400FC23F4 /* Images.xcassets */,
+				3152237A1B6AC87C00FC23F4 /* JRTMainRouter.h */,
+				3152237B1B6AC87C00FC23F4 /* JRTMainRouter.m */,
 				315223471B6AC28400FC23F4 /* LaunchScreen.xib */,
-				315223381B6AC28400FC23F4 /* Supporting Files */,
 			);
 			path = JRTViper;
 			sourceTree = "<group>";
@@ -202,14 +202,14 @@
 				315223391B6AC28400FC23F4 /* Info.plist */,
 				3152233A1B6AC28400FC23F4 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		315223511B6AC28400FC23F4 /* JRTViperTests */ = {
 			isa = PBXGroup;
 			children = (
-				315223541B6AC28400FC23F4 /* JRTViperTests.m */,
 				315223521B6AC28400FC23F4 /* Supporting Files */,
+				315223541B6AC28400FC23F4 /* JRTViperTests.m */,
 			);
 			path = JRTViperTests;
 			sourceTree = "<group>";
@@ -219,7 +219,7 @@
 			children = (
 				315223531B6AC28400FC23F4 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		3152235E1B6AC3E200FC23F4 /* PodFiles */ = {
@@ -256,7 +256,7 @@
 				315223AE1B6AD2FD00FC23F4 /* Empty */,
 				315223AC1B6AD13C00FC23F4 /* Item */,
 			);
-			name = Examples;
+			path = Examples;
 			sourceTree = "<group>";
 		};
 		315223951B6ACEED00FC23F4 /* Index */ = {
@@ -320,13 +320,13 @@
 		315223AC1B6AD13C00FC23F4 /* Item */ = {
 			isa = PBXGroup;
 			children = (
-				319CB49C1B84E99D004674EE /* Router */,
 				319CB49B1B84E992004674EE /* Entity */,
-				319CB49A1B84E98A004674EE /* Presenter */,
 				319CB4991B84E94C004674EE /* Interactor */,
+				319CB49A1B84E98A004674EE /* Presenter */,
+				319CB49C1B84E99D004674EE /* Router */,
 				315223AD1B6AD2CF00FC23F4 /* View */,
 			);
-			name = Item;
+			path = Item;
 			sourceTree = "<group>";
 		};
 		315223AD1B6AD2CF00FC23F4 /* View */ = {
@@ -336,19 +336,19 @@
 				319CB4AA1B84EBC2004674EE /* ItemViewController.m */,
 				319CB4AB1B84EBC2004674EE /* ItemViewController.xib */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		315223AE1B6AD2FD00FC23F4 /* Empty */ = {
 			isa = PBXGroup;
 			children = (
-				315223B31B6AD39400FC23F4 /* Router */,
 				315223B21B6AD38700FC23F4 /* Entity */,
-				315223B11B6AD32000FC23F4 /* Presenter */,
 				315223B01B6AD31700FC23F4 /* Interactor */,
+				315223B11B6AD32000FC23F4 /* Presenter */,
+				315223B31B6AD39400FC23F4 /* Router */,
 				315223AF1B6AD30F00FC23F4 /* View */,
 			);
-			name = Empty;
+			path = Empty;
 			sourceTree = "<group>";
 		};
 		315223AF1B6AD30F00FC23F4 /* View */ = {
@@ -358,7 +358,7 @@
 				315223B81B6AD3EF00FC23F4 /* EmptyViewController.m */,
 				315223B91B6AD3EF00FC23F4 /* EmptyViewController.xib */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		315223B01B6AD31700FC23F4 /* Interactor */ = {
@@ -367,7 +367,7 @@
 				315223BF1B6AD5F700FC23F4 /* EmptyInteractor.h */,
 				315223C01B6AD5F700FC23F4 /* EmptyInteractor.m */,
 			);
-			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		315223B11B6AD32000FC23F4 /* Presenter */ = {
@@ -376,14 +376,14 @@
 				315223BC1B6AD43F00FC23F4 /* EmptyPresenter.h */,
 				315223BD1B6AD43F00FC23F4 /* EmptyPresenter.m */,
 			);
-			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		315223B21B6AD38700FC23F4 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Entity;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		315223B31B6AD39400FC23F4 /* Router */ = {
@@ -392,7 +392,7 @@
 				315223B41B6AD3B700FC23F4 /* EmptyRouter.h */,
 				315223B51B6AD3B700FC23F4 /* EmptyRouter.m */,
 			);
-			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		319CB4991B84E94C004674EE /* Interactor */ = {
@@ -401,7 +401,7 @@
 				319CB4A61B84EB84004674EE /* ItemInteractor.h */,
 				319CB4A71B84EB84004674EE /* ItemInteractor.m */,
 			);
-			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		319CB49A1B84E98A004674EE /* Presenter */ = {
@@ -410,7 +410,7 @@
 				319CB4A31B84EB2E004674EE /* ItemPresenter.h */,
 				319CB4A41B84EB2E004674EE /* ItemPresenter.m */,
 			);
-			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		319CB49B1B84E992004674EE /* Entity */ = {
@@ -419,7 +419,7 @@
 				319CB4A01B84EA90004674EE /* ItemEntity.h */,
 				319CB4A11B84EA90004674EE /* ItemEntity.m */,
 			);
-			name = Entity;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		319CB49C1B84E99D004674EE /* Router */ = {
@@ -428,32 +428,32 @@
 				319CB49D1B84EA00004674EE /* ItemRouter.h */,
 				319CB49E1B84EA00004674EE /* ItemRouter.m */,
 			);
-			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		319CB4AE1B84FB4E004674EE /* Contacts MasterDetail */ = {
 			isa = PBXGroup;
 			children = (
-				319CB4B31B851782004674EE /* Router */,
 				319CB4B21B851776004674EE /* Entity */,
-				319CB4B11B85176A004674EE /* Presenter */,
 				319CB4B01B851755004674EE /* Interactor */,
+				319CB4B11B85176A004674EE /* Presenter */,
+				319CB4B31B851782004674EE /* Router */,
 				319CB4AF1B84FC96004674EE /* View */,
 			);
-			name = "Contacts MasterDetail";
+			path = "Contacts MasterDetail";
 			sourceTree = "<group>";
 		};
 		319CB4AF1B84FC96004674EE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				319CB4C01B85253F004674EE /* ContactsViewController.h */,
-				319CB4C11B85253F004674EE /* ContactsViewController.m */,
-				319CB4C21B85253F004674EE /* ContactsViewController.xib */,
 				319CB4CB1B853914004674EE /* ContactViewController.h */,
 				319CB4CC1B853914004674EE /* ContactViewController.m */,
 				319CB4CD1B853914004674EE /* ContactViewController.xib */,
+				319CB4C01B85253F004674EE /* ContactsViewController.h */,
+				319CB4C11B85253F004674EE /* ContactsViewController.m */,
+				319CB4C21B85253F004674EE /* ContactsViewController.xib */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		319CB4B01B851755004674EE /* Interactor */ = {
@@ -462,18 +462,18 @@
 				319CB4BD1B85251B004674EE /* ContactInteractor.h */,
 				319CB4BE1B85251B004674EE /* ContactInteractor.m */,
 			);
-			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		319CB4B11B85176A004674EE /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				319CB4BA1B8524F8004674EE /* ContactsPresenter.h */,
-				319CB4BB1B8524F8004674EE /* ContactsPresenter.m */,
 				319CB4C81B8537DB004674EE /* ContactPresenter.h */,
 				319CB4C91B8537DB004674EE /* ContactPresenter.m */,
+				319CB4BA1B8524F8004674EE /* ContactsPresenter.h */,
+				319CB4BB1B8524F8004674EE /* ContactsPresenter.m */,
 			);
-			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		319CB4B21B851776004674EE /* Entity */ = {
@@ -482,18 +482,18 @@
 				319CB4B41B8517DE004674EE /* ContactEntity.h */,
 				319CB4B51B8517DE004674EE /* ContactEntity.m */,
 			);
-			name = Entity;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		319CB4B31B851782004674EE /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				319CB4B71B8524D8004674EE /* ContactsRouter.h */,
-				319CB4B81B8524D8004674EE /* ContactsRouter.m */,
 				319CB4C51B8535DD004674EE /* ContactRouter.h */,
 				319CB4C61B8535DD004674EE /* ContactRouter.m */,
+				319CB4B71B8524D8004674EE /* ContactsRouter.h */,
+				319CB4B81B8524D8004674EE /* ContactsRouter.m */,
 			);
-			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -660,6 +660,7 @@
 				315223481B6AC28400FC23F4 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -749,7 +750,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JRTViper/Info.plist;
+				INFOPLIST_FILE = "JRTViper/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -759,7 +760,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JRTViper/Info.plist;
+				INFOPLIST_FILE = "JRTViper/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -777,7 +778,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = JRTViperTests/Info.plist;
+				INFOPLIST_FILE = "JRTViperTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JRTViper.app/JRTViper";
@@ -792,7 +793,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = JRTViperTests/Info.plist;
+				INFOPLIST_FILE = "JRTViperTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JRTViper.app/JRTViper";
